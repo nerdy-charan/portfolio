@@ -1,3 +1,7 @@
+# My Project
 
+This is a description of my project.
 
- <a [href="https://example.com" target="_blank](https://nerdy-charan.github.io/portfolio/)">Example</a> website.
+## Links
+
+You can check out my <a href="https://nerdy-charan.github.io/portfolio/" target="_blank">portfolio</a> for more information.
