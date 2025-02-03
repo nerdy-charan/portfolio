@@ -1,0 +1,249 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    scroll-behavior: smooth;
+  }
+  
+  /* Hide scrollbar */
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Vanta Background */
+  #vanta-background {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  
+  /* Section styles */
+  .section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  .section p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.5;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Navigation */
+  .navigation {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+  }
+  .navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+  }
+  .navigation a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+/* Card Styles */
+.card-spotlight {
+  position: relative;
+  flex: 1 1 300px; /* Ensures cards are responsive */
+  max-width: 300px; /* Sets a max width for each card */
+  overflow: hidden;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  /*background-color: #111;
+  border: 1px solid #222; */
+  background-color: rgba(17, 17, 17, 0.6); /* Adjust transparency */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Lighter border for better visibility */
+  color: #fff;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+  /* Spotlight Container */
+  .spotlight-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px; /* Set a maximum width if needed */
+    width: 100%; /* Ensure it takes full width */
+    margin: 0 auto; /* Center it within its parent */
+  }
+  
+  
+
+.card-spotlight:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+}
+
+.spotlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.card-spotlight:hover .spotlight {
+    opacity: 1;
+}
+
+/* Projects Section Layout */
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.project-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+
+  /* Customizer Styles */
+ /* #customizer-btn {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 1000;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    cursor: pointer;
+  }
+  #customizer-btn:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
+  }
+  #customizer {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 300px;
+    height: 100%;
+    background: #05090f;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+  }
+  #customizer.active {
+    right: 0;
+  }
+  .customizer-control {
+    margin-bottom: 20px;
+  } */
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: transparent;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: transparent; /* Transparent background */
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); /* Fading effect */
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)); /* Fading effect */
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 15s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 40px;
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 0.35)); /* Optional glowing effect */
+}
+.logos-slide img[src="./logos/html.svg"] {
+  height: 110px; /* Increase size */
+  width: auto; /* Maintain aspect ratio */
+}
+.logos-slide img[src="./logos/css.svg"] {
+  height: 110px; /* Increase size */
+  width: auto; /* Maintain aspect ratio */
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sai Charan's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Vanta.js background -->
+  <div id="vanta-background"></div>
+
+  <!-- Navigation -->
+  <div class="navigation">
+    <a href="#about">About Me</a>
+    <a href="#projects">My Projects</a>
+  </div>
+
+  
+  <!-- customizer btm -->
+  <!--
+  <button id="customizer-btn">Customize</button>
+  <div id="customizer">
+    <h3>Customize Waves</h3>
+    <div class="customizer-control">
+      <label for="color">Color</label>
+      <input type="color" id="color" value="#2D002D">
+    </div>
+    <div class="customizer-control">
+      <label for="shininess">Shininess</label>
+      <input type="range" id="shininess" min="0" max="100" value="30">
+    </div>
+    <div class="customizer-control">
+      <label for="waveHeight">Wave Height</label>
+      <input type="range" id="waveHeight" min="0" max="50" value="15">
+    </div>
+    <div class="customizer-control">
+      <label for="waveSpeed">Wave Speed</label>
+      <input type="range" id="waveSpeed" min="0" max="5" step="0.1" value="1">
+    </div>
+    <div class="customizer-control">
+      <label for="zoom">Zoom</label>
+      <input type="range" id="zoom" min="0.5" max="5" step="0.1" value="1">
+    </div>
+  </div>  -->
+
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h1>Hi, I am Sai Charan</h1>
+    <p>I am a software engineer specializing in web development and machine learning.</p>
+    <div class="scroll-indicator" onclick="document.getElementById('projects').scrollIntoView()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </section>
+  <section id="skills">
+    <div class="logos">
+      <div class="logos-slide">
+        <img src="./logos/azure.svg" alt="Azure" />
+        <img src="./logos/css.svg" alt="CSS" />
+        <img src="./logos/Csharp.svg" alt="C#" />
+        <img src="./logos/dotnet.svg" alt=".NET" />
+        <img src="./logos/github.svg" alt="GitHub" />
+        <img src="./logos/html.svg" alt="HTML" />
+        <img src="./logos/javascript.svg" alt="JavaScript" />
+        <img src="./logos/mysql.svg" alt="MySQL" />
+        <img src="./logos/python.svg" alt="Python" />
+        <img src="./logos/vscode.svg" alt="VSCode" />
+      </div>
+
+      <div class="logos-slide">
+        <img src="./logos/azure.svg" alt="Azure" />
+        <img src="./logos/css.svg" alt="CSS" />
+        <img src="./logos/Csharp.svg" alt="C#" />
+        <img src="./logos/dotnet.svg" alt=".NET" />
+        <img src="./logos/github.svg" alt="GitHub" />
+        <img src="./logos/html.svg" alt="HTML" />
+        <img src="./logos/javascript.svg" alt="JavaScript" />
+        <img src="./logos/mysql.svg" alt="MySQL" />
+        <img src="./logos/python.svg" alt="Python" />
+        <img src="./logos/vscode.svg" alt="VSCode" />
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Projects Section old -->
+ <!--
+   <section id="projects" class="section">
+    <h1>My Projects</h1>
+    <div class="spotlight-container">
+      <div class="card-spotlight">
+        <h3>Project 1</h3>
+        <p>Description of Project 1</p>
+        <div class="spotlight"></div>
+      </div>
+      <div class="card-spotlight">
+        <h3>Project 2</h3>
+        <p>Description of Project 2</p>
+        <div class="spotlight"></div>
+      </div>
+    </div>    
+  </section> -->
+
+ 
+
+
+<!-- Projects Section -->
+<section id="projects" class="section">
+  <h1>My Projects</h1>
+
+  <div class="projects-wrapper">
+      <!-- Top Row -->
+      <div class="project-row top-row">
+          <div class="card-spotlight">
+              <h3>Project 1</h3>
+              <p>Description of Project 1</p>
+              <div class="spotlight"></div>
+          </div>
+          <div class="card-spotlight">
+              <h3>Project 2</h3>
+              <p>Description of Project 2</p>
+              <div class="spotlight"></div>
+          </div>
+      </div>
+
+      <!-- Bottom Row (New) -->
+      <div class="project-row bottom-row">
+          <div class="card-spotlight">
+              <h3>Project 3</h3>
+              <p>Description of Project 3</p>
+              <div class="spotlight"></div>
+          </div>
+          <div class="card-spotlight">
+              <h3>Project 4</h3>
+              <p>Description of Project 4</p>
+              <div class="spotlight"></div>
+          </div>
+      </div>
+  </div>
+</section>
+
+ <!-- Scripts -->
+ <script src="three.r134.min.js"></script>
+ <script src="vanta.waves.min.js"></script>
+ <script src="script.js"></script>
+</body>
+</html>
