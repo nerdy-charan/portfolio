@@ -1,150 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sai Charan's Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Charan | Architect of Intelligence</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Fonts: Space Grotesk (Tech) & Syncopate (Futuristic Headers) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Syncopate:wght@400;700&family=Fira+Code:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
+
 <body>
-  <!-- Vanta.js background -->
-  <div id="vanta-background"></div>
 
-  <!-- Navigation -->
-  <div class="navigation">
-    <a href="#about">About Me</a>
-    <a href="#projects">My Projects</a>
-  </div>
+    <!-- Background Canvas (Neural Network) -->
+    <canvas id="neural-canvas"></canvas>
+    <div class="scanline"></div>
 
-  
-  <!-- customizer btm -->
-  <!--
-  <button id="customizer-btn">Customize</button>
-  <div id="customizer">
-    <h3>Customize Waves</h3>
-    <div class="customizer-control">
-      <label for="color">Color</label>
-      <input type="color" id="color" value="#2D002D">
-    </div>
-    <div class="customizer-control">
-      <label for="shininess">Shininess</label>
-      <input type="range" id="shininess" min="0" max="100" value="30">
-    </div>
-    <div class="customizer-control">
-      <label for="waveHeight">Wave Height</label>
-      <input type="range" id="waveHeight" min="0" max="50" value="15">
-    </div>
-    <div class="customizer-control">
-      <label for="waveSpeed">Wave Speed</label>
-      <input type="range" id="waveSpeed" min="0" max="5" step="0.1" value="1">
-    </div>
-    <div class="customizer-control">
-      <label for="zoom">Zoom</label>
-      <input type="range" id="zoom" min="0.5" max="5" step="0.1" value="1">
-    </div>
-  </div>  -->
+    <!-- Navigation -->
+    <nav>
+        <div class="logo" data-magnetic>SC<span class="blink">_</span></div>
+        <div class="nav-items">
+            <a href="#skills" class="nav-link" data-magnetic>Skills</a>
+            <a href="#experience" class="nav-link" data-magnetic>Experience</a>
+            <a href="#work" class="nav-link" data-magnetic>Projects</a>
+            <a href="#contact" class="nav-link" data-magnetic>Contact</a>
+        </div>
+    </nav>
 
-
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h1>Hi, I am Sai Charan</h1>
-    <p>I am a software engineer specializing in web development and machine learning.</p>
-    <div class="scroll-indicator" onclick="document.getElementById('projects').scrollIntoView()">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </section>
-  <section id="skills">
-    <div class="logos">
-      <div class="logos-slide">
-        <img src="./logos/azure.svg" alt="Azure" />
-        <img src="./logos/css.svg" alt="CSS" />
-        <img src="./logos/Csharp.svg" alt="C#" />
-        <img src="./logos/dotnet.svg" alt=".NET" />
-        <img src="./logos/github.svg" alt="GitHub" />
-        <img src="./logos/html.svg" alt="HTML" />
-        <img src="./logos/javascript.svg" alt="JavaScript" />
-        <img src="./logos/mysql.svg" alt="MySQL" />
-        <img src="./logos/python.svg" alt="Python" />
-        <img src="./logos/vscode.svg" alt="VSCode" />
-      </div>
-
-      <div class="logos-slide">
-        <img src="./logos/azure.svg" alt="Azure" />
-        <img src="./logos/css.svg" alt="CSS" />
-        <img src="./logos/Csharp.svg" alt="C#" />
-        <img src="./logos/dotnet.svg" alt=".NET" />
-        <img src="./logos/github.svg" alt="GitHub" />
-        <img src="./logos/html.svg" alt="HTML" />
-        <img src="./logos/javascript.svg" alt="JavaScript" />
-        <img src="./logos/mysql.svg" alt="MySQL" />
-        <img src="./logos/python.svg" alt="Python" />
-        <img src="./logos/vscode.svg" alt="VSCode" />
-      </div>
-    </div>
-  </section>
-  
-
-  <!-- Projects Section old -->
- <!--
-   <section id="projects" class="section">
-    <h1>My Projects</h1>
-    <div class="spotlight-container">
-      <div class="card-spotlight">
-        <h3>Project 1</h3>
-        <p>Description of Project 1</p>
-        <div class="spotlight"></div>
-      </div>
-      <div class="card-spotlight">
-        <h3>Project 2</h3>
-        <p>Description of Project 2</p>
-        <div class="spotlight"></div>
-      </div>
-    </div>    
-  </section> -->
-
- 
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="label">SYSTEM ONLINE</div>
+                <h1 class="glitch-header">
+                    DATA <span class="glitch-text" data-text="ALCHEMIST">ALCHEMIST</span>
+                </h1>
+                <p class="hero-sub">
+                    Sai Charan Rajoju <span class="separator">//</span>
+                    I construct the logic behind the chaos. <br>
+                    Specializing in Predictive Modeling & Deep Learning.
+                </p>
+                <div class="hero-footer">
+                    <div class="scroll-icon">
+                        <div class="wheel"></div>
+                    </div>
+                </div>
+            </div>
 
 
-<!-- Projects Section -->
-<section id="projects" class="section">
-  <h1>My Projects</h1>
+        </section>
 
-  <div class="projects-wrapper">
-      <!-- Top Row -->
-      <div class="project-row top-row">
-          <div class="card-spotlight">
-              <h3>Project 1</h3>
-              <p>Description of Project 1</p>
-              <div class="spotlight"></div>
-          </div>
-          <div class="card-spotlight">
-              <h3>Project 2</h3>
-              <p>Description of Project 2</p>
-              <div class="spotlight"></div>
-          </div>
-      </div>
+        <!-- Section 2: The Neural Orbit (Skills) -->
+        <section id="skills" class="skills-section">
+            <div class="orbit-container">
+                <!-- Central Sun -->
+                <div class="center-star" id="center-star">
+                    <i class="fas fa-brain"></i>
+                    <span>AI/ML</span>
+                    <div class="status-badge">
+                        <span class="icon"><i class="fas fa-mouse-pointer"></i></span>
+                        <span class="text">VIEW TECH STACK</span>
+                    </div>
+                </div>
 
-      <!-- Bottom Row (New) -->
-      <div class="project-row bottom-row">
-          <div class="card-spotlight">
-              <h3>Project 3</h3>
-              <p>Description of Project 3</p>
-              <div class="spotlight"></div>
-          </div>
-          <div class="card-spotlight">
-              <h3>Project 4</h3>
-              <p>Description of Project 4</p>
-              <div class="spotlight"></div>
-          </div>
-      </div>
-  </div>
-</section>
+                <!-- Orbit 1: Core ML Frameworks -->
+                <div class="orbit orbit-1">
+                    <div class="planet" title="Python"><i class="fab fa-python"></i></div>
+                    <div class="planet" title="Keras"><i class="fas fa-network-wired"></i></div>
+                    <div class="planet" title="PyTorch"><i class="fas fa-fire"></i></div>
+                </div>
 
- <!-- Scripts -->
- <script src="three.r134.min.js"></script>
- <script src="vanta.waves.min.js"></script>
- <script src="script.js"></script>
+                <!-- Orbit 2: Python Libraries & Data/Cloud -->
+                <div class="orbit orbit-2">
+                    <div class="planet" title="Pandas"><i class="fas fa-table"></i></div>
+                    <div class="planet" title="Scikit-learn"><i class="fas fa-chart-line"></i></div>
+                    <div class="planet" title="NumPy"><i class="fas fa-calculator"></i></div>
+                    <div class="planet" title="Jupyter"><i class="fas fa-book"></i></div>
+                    <div class="planet" title="SQL"><i class="fas fa-database"></i></div>
+                    <div class="planet" title="AWS"><i class="fab fa-aws"></i></div>
+                </div>
+
+                <!-- Orbit 3: Infrastructure & Visualization -->
+                <div class="orbit orbit-3">
+                    <div class="planet" title="Docker"><i class="fab fa-docker"></i></div>
+                    <div class="planet" title="Kubernetes"><i class="fas fa-cubes"></i></div>
+                    <div class="planet" title="Tableau"><i class="fas fa-chart-pie"></i></div>
+                    <div class="planet" title="Matplotlib"><i class="fas fa-chart-bar"></i></div>
+                    <div class="planet" title="Seaborn"><i class="fas fa-chart-area"></i></div>
+                </div>
+
+                <!-- Holographic Panel (Hidden by default) -->
+                <div class="holo-panel" id="holo-panel">
+                    <div class="holo-header">
+                        <h3>NEURAL ARCHITECTURE <span class="sys-status">SYSTEM ONLINE</span></h3>
+                        <button class="close-btn" id="close-holo"><i class="fas fa-times"></i></button>
+                    </div>
+                    <div class="holo-content">
+                        <div class="skill-category">
+                            <h4>LANGUAGES</h4>
+                            <ul>
+                                <li><span class="status-dot"></span> Python</li>
+                                <li><span class="status-dot"></span> SQL</li>
+                                <li><span class="status-dot"></span> JavaScript</li>
+                                <li><span class="status-dot"></span> C++</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>AI / ML</h4>
+                            <ul>
+                                <li><span class="status-dot"></span> TensorFlow</li>
+                                <li><span class="status-dot"></span> PyTorch</li>
+                                <li><span class="status-dot"></span> Keras</li>
+                                <li><span class="status-dot"></span> Scikit-learn</li>
+                                <li><span class="status-dot"></span> OpenAI API</li>
+                                <li><span class="status-dot"></span> Hugging Face</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>DATA ENG</h4>
+                            <ul>
+                                <li><span class="status-dot"></span> Pandas</li>
+                                <li><span class="status-dot"></span> NumPy</li>
+                                <li><span class="status-dot"></span> Spark</li>
+                                <li><span class="status-dot"></span> PostgreSQL</li>
+                                <li><span class="status-dot"></span> MongoDB</li>
+                                <li><span class="status-dot"></span> Redis</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h4>DEVOPS & TOOLS</h4>
+                            <ul>
+                                <li><span class="status-dot"></span> Docker</li>
+                                <li><span class="status-dot"></span> Kubernetes</li>
+                                <li><span class="status-dot"></span> AWS</li>
+                                <li><span class="status-dot"></span> Git</li>
+                                <li><span class="status-dot"></span> Linux</li>
+                                <li><span class="status-dot"></span> Tableau</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: The Data Log (Experience) -->
+        <section id="experience" class="experience-section">
+            <div class="section-title">
+                <h2>PROFESSIONAL <br> <i>EXPERIENCE</i></h2>
+            </div>
+
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+
+                <!-- Item 1: Wipro (Nike) -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <div class="git-meta">
+                            <span class="commit-hash">a3f2b91</span>
+                            <span class="branch">main</span>
+                            <span class="commit-date">Jun 2023 - Jul 2024</span>
+                        </div>
+                        <div class="log-header">
+                            <h3 class="commit-message">feat: Project Engineer @ Nike (Wipro Limited)</h3>
+                        </div>
+                        <div class="log-body">
+                            <ul>
+                                <li><span class="diff-add">+</span> Supported deployment of regional size curve models,
+                                    driving <strong>$11M+ incremental value</strong></li>
+                                <li><span class="diff-add">+</span> Automated data aggregation & feature engineering
+                                    using <strong>Databricks & PySpark</strong></li>
+                                <li><span class="diff-add">+</span> Managed allocation forecasting models & validated
+                                    performance via SQL</li>
+                                <li><span class="diff-add">+</span> Identified discount strategy opportunities through
+                                    price elasticity analysis</li>
+                            </ul>
+                        </div>
+                        <div class="log-tags">
+                            <span>Databricks</span><span>PySpark</span><span>SQL</span><span>Python</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Wipro (Lloyds) -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <div class="git-meta">
+                            <span class="commit-hash">7c8d4e2</span>
+                            <span class="branch">main</span>
+                            <span class="commit-date">Sep 2022 - May 2023</span>
+                        </div>
+                        <div class="log-header">
+                            <h3 class="commit-message">feat: Project Engineer @ Lloyds Banking Group (Wipro Limited)
+                            </h3>
+                        </div>
+                        <div class="log-body">
+                            <ul>
+                                <li><span class="diff-add">+</span> Migrated <strong>15+ TB</strong> of data from
+                                    Teradata to BigQuery</li>
+                                <li><span class="diff-add">+</span> Validated <strong>120M+ records</strong> achieving
+                                    99.8% data integrity</li>
+                                <li><span class="diff-add">+</span> Prepared 5M rows of customer data using
+                                    <strong>Pandas</strong> for risk models
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="log-tags">
+                            <span>BigQuery</span><span>Looker</span><span>SQL</span><span>Pandas</span><span>Jira</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Wipro (Trainee) -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass">
+                        <div class="git-meta">
+                            <span class="commit-hash">1b5f9a3</span>
+                            <span class="branch">main</span>
+                            <span class="commit-date">Mar 2022 - Jun 2022</span>
+                        </div>
+                        <div class="log-header">
+                            <h3 class="commit-message">feat: Trainee (Wipro Limited)</h3>
+                        </div>
+                        <div class="log-body">
+                            <ul>
+                                <li><span class="diff-add">+</span> Built data ingestion pipelines using <strong>Azure
+                                        Data Factory</strong></li>
+                                <li><span class="diff-add">+</span> Performed data quality checks & SQL validation for
+                                    Power BI</li>
+                            </ul>
+                        </div>
+                        <div class="log-tags">
+                            <span>Azure ADF</span><span>SQL</span><span>Power BI</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Horizontal Scroll Projects (Holographic Cards) -->
+        <section id="work" class="projects-section">
+            <div class="sticky-container">
+                <div class="horizontal-wrapper">
+
+                    <!-- Title Card -->
+                    <div class="project-card title-card">
+                        <h2>DEPLOYED<br>MODULES</h2>
+                        <p>→ Scroll to Explore</p>
+                    </div>
+
+                    <!-- Project 1: GCP Patient Monitoring -->
+                    <div class="project-card glass" data-tilt>
+                        <div class="card-content">
+                            <div class="card-head">
+                                <span class="tag">BIG_DATA</span>
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Real-Time Patient Monitoring</h3>
+                            <div class="card-body">
+                                <p>End-to-end GCP pipeline processing clinical records & real-time vitals.</p>
+                                <div class="code-snippet">
+                                    <span class="c-blue">from</span> pyspark.sql <span class="c-blue">import</span>
+                                    SparkSession<br>
+                                    spark = SparkSession.builder.getOrCreate()<br>
+                                    df.write.format(<span class="c-num">"bigquery"</span>)
+                                </div>
+                            </div>
+                            <a href="https://github.com/nerdy-charan" target="_blank" class="card-btn">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Mental Health Prediction -->
+                    <div class="project-card glass" data-tilt>
+                        <div class="card-content">
+                            <div class="card-head">
+                                <span class="tag">NLP_ML</span>
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <h3>Mental Health Predictor</h3>
+                            <div class="card-body">
+                                <p>BERT-based model predicting disorders from 50K+ social media posts.</p>
+                                <div class="code-snippet">
+                                    <span class="c-blue">from</span> transformers <span class="c-blue">import</span>
+                                    BertTokenizer<br>
+                                    model = BertForSequenceClassification<br>
+                                    f1_score = <span class="c-num">0.82</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/nerdy-charan" target="_blank" class="card-btn">View Project</a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Fake News Detection -->
+                    <div class="project-card glass" data-tilt>
+                        <div class="card-content">
+                            <div class="card-head">
+                                <span class="tag">ML_CLASSIFICATION</span>
+                                <i class="fas fa-shield-halved"></i>
+                            </div>
+                            <h3>Fake News Detector</h3>
+                            <div class="card-body">
+                                <p>ML classifier achieving 85% accuracy using TF-IDF features.</p>
+                                <div class="code-snippet">
+                                    <span class="c-blue">from</span> sklearn.feature_extraction.text <span
+                                        class="c-blue">import</span> TfidfVectorizer<br>
+                                    vectorizer = TfidfVectorizer()<br>
+                                    accuracy = <span class="c-num">0.85</span>
+                                </div>
+                            </div>
+                            <a href="https://github.com/nerdy-charan" target="_blank" class="card-btn">View Project</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- Section 5: Contact -->
+        <section id="contact" class="contact-section">
+            <div class="section-title">
+                <h2>ESTABLISH <br> <i>CONNECTION</i></h2>
+            </div>
+            <div class="contact-container">
+                <div class="contact-links">
+                    <a href="https://www.linkedin.com/in/sai-charan-71b104206" target="_blank" class="contact-btn"
+                        data-magnetic>
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/nerdy-charan" target="_blank" class="contact-btn" data-magnetic>
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="mailto:rajojusaicharan1@gmail.com" class="contact-btn" data-magnetic>
+                        <i class="fas fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Resume Terminal -->
+        <section id="terminal" class="terminal-section">
+            <div class="terminal-container window-glass">
+                <div class="window-bar">
+                    <div class="circles">
+                        <span class="c red"></span><span class="c yellow"></span><span class="c green"></span>
+                    </div>
+                    <div class="filename">resume_viewer.py — Visual Studio Code</div>
+                </div>
+                <div class="editor-layout">
+                    <div class="sidebar">
+                        <i class="fas fa-file-code active"></i>
+                        <i class="fas fa-search"></i>
+                        <i class="fas fa-code-branch"></i>
+                    </div>
+                    <div class="code-area">
+                        <div class="lines">
+                            <span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span>
+                        </div>
+                        <div class="code-content">
+                            <p><span class="k">def</span> <span class="f">view_resume</span>():</p>
+                            <p>&nbsp;&nbsp;candidate = {</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"name"</span>: <span class="s">"Sai Charan
+                                    Rajoju"</span>,</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"role"</span>: <span class="s">"Data
+                                    Scientist"</span>,</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"gpa"</span>: <span class="c-num">4.0</span>,</p>
+                            <p>&nbsp;&nbsp;&nbsp;&nbsp;<span class="s">"experience"</span>: <span class="s">"2+
+                                    years"</span></p>
+                            <p>&nbsp;&nbsp;}</p>
+                            <p>&nbsp;&nbsp;<span class="k">print</span>(candidate)</p>
+                            <p>&nbsp;&nbsp;<span class="k">return</span> <span class="s">"resume.pdf"</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="terminal-output">
+                    <div class="tab">TERMINAL</div>
+                    <div class="console">
+                        <p>C:\Users\Recruiter> python resume_viewer.py</p>
+                        <p id="typewriter"></p>
+                        <button id="run-btn" data-magnetic>RUN SCRIPT</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Architected by Sai Charan | 2025</p>
+        </footer>
+
+    </main>
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
